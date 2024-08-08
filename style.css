@@ -8,13 +8,13 @@
 .container {
     width: 100;
     min-height: 100vh;
-    background: #F3E5F5;
+    background: linear-gradient(to right, #BEB2CB, #D3CADD);
     padding: 10px;
 }
 
 .todo-app {
     width: 100%;
-    max-width: 540px;
+    max-width: 1000px;
     background: #fff;
     margin: 100px auto 20px;
     padding: 40px 30px 70px;
@@ -43,26 +43,31 @@
 }
 
 input {
-    flex: 1;  /* it will take the full width */
+    flex: 1;
+    /* it will take the full width */
     border: none;
     outline: none;
     background: transparent;
     padding: 10px;
-font-weight: 14px;
+    font-weight: 14px;
 }
 
-button{
+button {
     border: none;
     outline: none;
-    padding:16px 50px;
-    background: #ff5945;
+    padding: 16px 50px;
+    background: #5d5e60;
     color: #fff;
     font-size: 16px;
     cursor: pointer;
     border-radius: 40px;
 }
 
-ul li{
+button:hover{
+    background-color: #8d8d92;
+}
+
+ul li {
     list-style: none;
     font-size: 17px;
     padding: 12px 8px 12px 50px;
@@ -71,8 +76,8 @@ ul li{
     position: relative;
 }
 
-ul li::before{
-    content:'';
+ul li::before {
+    content: '';
     position: absolute;
     height: 28px;
     width: 28px;
@@ -84,14 +89,55 @@ ul li::before{
     left: 8px;
 }
 
-.checked{
+
+
+/* Position the delete and edit icons separately */
+span.delete {
+    position: absolute;
+    right: 10px; /* Position the delete icon */
+    top: 5px;
+    width: 40px;
+    height: 40px;
+    font-size: 22px;
+    color: #555;
+    line-height: 40px;
+    text-align: center;
+    border-radius: 50%;
+}
+
+span.edit {
+    position: absolute;
+    right: 60px; /* Position the edit icon with some spacing from the delete icon */
+    top: 5px;
+    width: 40px;
+    height: 40px;
+    font-size: 22px;
+    color: #555;
+    line-height: 40px;
+    text-align: center;
+    border-radius: 50%;
+}
+
+/* Hover effects for the icons */
+span.delete:hover, span.edit:hover {
+    background-color: #edeef0;
+}
+
+.checked {
     color: #555;
     text-decoration: line-through;
 }
 
-.checked::before{
+.checked::before {
     background-image: url(success.png);
 }
+
+ul li:hover{
+    background-color: rgba(211, 211, 211, 0.5);
+    border-radius: 10px;
+}
+
+
 
 span {
     position: absolute;
@@ -106,6 +152,6 @@ span {
     border-radius: 50%;
 }
 
-span:hover{ 
-background-color: #edeef0;
+span:hover {
+    background-color: #edeef0;
 }
