@@ -22,6 +22,7 @@
 }
 
 .todo-app h1 {
+    font-family: 'Poppins' , sans-serif;
     display: flex;
     align-items: center;
     margin-bottom: 20px;
@@ -68,6 +69,7 @@ button:hover{
 }
 
 ul li {
+    font-family: 'Roboto' , sans-serif;
     list-style: none;
     font-size: 17px;
     padding: 12px 8px 12px 50px;
@@ -120,7 +122,7 @@ span.edit {
 
 /* Hover effects for the icons */
 span.delete:hover, span.edit:hover {
-    background-color: #edeef0;
+    background-color: #b2b4b7;
 }
 
 .checked {
