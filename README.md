@@ -53,4 +53,7 @@ The application provides an intuitive interface where users can quickly add, mod
 This project serves as an excellent introduction to web development, covering the basics of front-end technologies and providing practical experience with JavaScript event handling and local storage.
 
 
+##Output
+<img width="1710" alt="Screenshot-task1" src="https://github.com/user-attachments/assets/194cd81c-bc15-4105-a48e-b959903412f3">
+
 
